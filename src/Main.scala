@@ -1,35 +1,39 @@
-object session{
-    def abs(x :Double) = if( x < 0) -x else x
+import jordan._
 
-    def sqrt(x:Double) = {
-        def sqrtIter(guess:Double): Double =
-        if(isGoodEnough(guess))
-            guess
-        else
-            sqrtIter(improve(guess))
+val x : List[String]= Nil
 
-        def isGoodEnough(guess:Double) =
-            abs(guess*guess - x)/x < 0.001
+// object session{
+//     def abs(x :Double) = if( x < 0) -x else x
 
-        def improve(guess:Double) =
-            (guess + x/guess)/2
+//     def sqrt(x:Double) = {
+//         def sqrtIter(guess:Double): Double =
+//         if(isGoodEnough(guess))
+//             guess
+//         else
+//             sqrtIter(improve(guess))
 
-        sqrtIter(1.0)
-    }
-}
+//         def isGoodEnough(guess:Double) =
+//             abs(guess*guess - x)/x < 0.001
 
-session.sqrt(2.0)
-session.sqrt(4.0)
+//         def improve(guess:Double) =
+//             (guess + x/guess)/2
 
-def gcd(a:Int, b:Int):Int =
-    if (b == 0) a else gcd(b, a % b)
+//         sqrtIter(1.0)
+//     }
+// }
 
-def factorial(n:Int):Int =
-    if(n == 0) 1 else n*factorial(n-1)
+// session.sqrt(2.0)
+// session.sqrt(4.0)
 
-// Tail recursive factorial
-def factorial(n:Int):Int = {
-    def _f(n:Int,carry:Int):Int =
-        if( n == 0) carry else _f(n-1,carry*n)
-    _f(n,1)
-}
+// def gcd(a:Int, b:Int):Int =
+//     if (b == 0) a else gcd(b, a % b)
+
+// def factorial(n:Int):Int =
+//     if(n == 0) 1 else n*factorial(n-1)
+
+// // Tail recursive factorial
+// def factorial(n:Int):Int = {
+//     def _f(n:Int,carry:Int):Int =
+//         if( n == 0) carry else _f(n-1,carry*n)
+//     _f(n,1)
+// }
