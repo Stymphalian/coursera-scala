@@ -1,5 +1,5 @@
 # Coursera - Scala
-A repository to track my progress through the course.
+A repository to track my progress through ["Functional Programming: Principles in Scala"](https://www.coursera.org/course/progfun) by Martin Odersky.
 
 # Purpose
 I took "CSC330: Programming Lanaguages" at school this last semester (Jan - April 2015).We learned funtcional programming through _SML_ and _Racket_. Our professor recommended that we invest sometime into learning Scala as he thought it would be a prominent language over the next 5 years. So here I am trying to learn a new language hoping that it pays off  : )
