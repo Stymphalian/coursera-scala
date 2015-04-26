@@ -27,7 +27,7 @@ project/plugins/project/
 
 # Eclipse
 *.pydevproject
-.metadata/*
+.metadata/
 .gradle
 bin/
 tmp/
