@@ -241,5 +241,5 @@ object GoogleVsApple {
 
 object Main extends App {
   // Print the trending tweets
-  GoogleVsApple.trending foreach println
+  GoogleVsApple.trending foreach println  
 }
