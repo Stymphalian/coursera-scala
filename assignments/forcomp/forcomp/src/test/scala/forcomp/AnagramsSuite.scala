@@ -48,6 +48,13 @@ class AnagramsSuite extends FunSuite {
     val lad = List(('a', 1), ('d', 1), ('l', 1))
     assert(subtract(lard, r) === lad)
   }
+  
+  test("subtract: laarrd - ra") {
+    val laarrd = List(('a', 2), ('d', 1), ('l', 1), ('r', 2))
+    val ra = List(('a',1),('r', 1))
+    val lard = List(('a', 1), ('d', 1), ('l', 1),('r',1))
+    assert(subtract(laarrd, ra) === lard)
+  }
 
 
 
@@ -70,6 +77,22 @@ class AnagramsSuite extends FunSuite {
     )
     assert(combinations(abba).toSet === abbacomb.toSet)
   }
+  
+//  test("combinations: linux") {
+//    val linuxrulez = List(('l',1),('i',1),('n',1),('u',1),('x',1))
+//    val abbacomb = List(
+//      List(),
+//      List(('a', 1)),
+//      List(('a', 2)),
+//      List(('b', 1)),
+//      List(('a', 1), ('b', 1)),
+//      List(('a', 2), ('b', 1)),
+//      List(('b', 2)),
+//      List(('a', 1), ('b', 2)),
+//      List(('a', 2), ('b', 2))
+//    )
+//    assert(combinations(abba).toSet === abbacomb.toSet)
+//  }
 
 
 
